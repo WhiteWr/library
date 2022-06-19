@@ -1,0 +1,12 @@
+// Импорт стилей
+@import './assets/variables.scss'; // переменные
+@import './assets/normalize.css';  // сброс стилей
+@import './assets/fonts.scss';     // шрифты
+// Импорт компонентов
+@import './components/header.scss';
+@import './components/filtr.scss';
+@import './components/card.scss';
+
+body{
+    background-color:rgb(252, 240, 255);
+}

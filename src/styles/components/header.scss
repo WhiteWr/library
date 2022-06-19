@@ -1,0 +1,107 @@
+.header{
+    background-color: white;
+    border-bottom: 1px solid $color_sub;
+    color: $text_main;
+    font-family: monospace;
+    // Контейнер контента
+    .container{
+        width: 1080px;
+        height: 75px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // Логотип
+    .logotype{
+        display: flex;
+        align-items: center;
+        img{
+            width: 40px;
+        }
+        .text{
+            margin-left: 10px;
+            font-size: 17px;
+            .red{
+                color: red;
+            }
+        }
+    }
+    // Меню
+    .menu{
+        display: flex;
+        // авторизация/регистрация
+        .entry{
+            display: flex;
+            align-items: center;
+            .login{
+                font-size: 12px;
+                padding: 7px;
+                margin-right: 4px;
+                border: 1px solid $color_main;
+                background-color: $color_main;
+                color: white;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .reg{
+                font-size: 12px;
+                padding: 7px;
+                border: 1px solid $color_main;
+                transition: 0.2s;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $color_sub;
+                    color: white;
+                }
+            }
+        }
+        // настройки
+        .settings{
+            display: flex;
+            margin-left: 30px;
+            .icon{ 
+                transition: 0.2s;    
+                &:hover{
+                    cursor: pointer;
+                    transform: rotate(30deg);
+                }
+            }
+            .modal{
+                width: 200px;
+                margin-top: 53px;
+                position: absolute;
+                background-color: white;
+                border-right: 1px solid $color_sub;
+                .item{
+                    height: 35px;
+                    text-align: center;
+                    line-height: 30px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        // Профиль пользователя
+        .user{
+            display: flex;
+            .profile{
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                background-color: red;
+                cursor: pointer;
+            }
+            .marks{
+                margin-left: 30px;
+                transition: 0.2;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
