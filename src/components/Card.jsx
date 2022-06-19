@@ -1,17 +1,18 @@
 import React from 'react'
+import data from '../data/books'
 
-export default function Card() {
+export default function Card(props) {
   return (
-        <div className="card">
+        <div className="card" id={props.data.id}>
             <div className="subcontent">
-                <img src="" alt="" />
-                <div className="read">Читать</div>
+                <img src={props.data.images} alt="" />
+                <a href={props.data.link} className="read" target="_Blank">Читать</a>
             </div>
             <div className="content">
-                <div className="title">Срыв <div className="add">+</div></div>
-                <div className="subtitle">Играть что бы жить <span className="number">(1)</span></div>
-                <div className="author">Дмитрий Рус</div>
-                <div className="discribe">Данная книга повествует нам про человека который попал в ммо игру с полным погружением. и пошел на срывДанная книга повествует нам про человека который попал в ммо игру с полным погружением. и пошел на срыв</div>
+                <div className="title">{props.data.title}<div className="add">+</div></div>
+                <div className="subtitle">{props.data.cycle.name}<span className="number">({props.data.cycle.number})</span></div>
+                <div className="author">{props.data.author}</div>
+                <div className="discribe">{props.data.discribe}</div>
                 <div className="menu">
                     <div className="comment">Комментировать</div>
                     <div className="more">...</div>

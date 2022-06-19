@@ -30,7 +30,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(), 
         new HtmlWebpackPlugin({ 
-            // favicon: './assets/favicon.svg', // иконка проекта
+            favicon: './assets/icons/header/logotype.png', // иконка проекта
             template: './index.html', // указание основного html документа
             filename: 'index.html', // Назване основного html файла
             minify: { // Минифицирование html

@@ -1,8 +1,7 @@
 .list{
-    width: 1080px;
-    margin: 50px auto;
     .card{
-        width: 70%;
+        width: 100%;
+        margin-bottom: 20px;
         padding: 10px 0 10px 0;
         background-color: white;
         font-family: monospace;
@@ -29,6 +28,8 @@
             width: 100%;
             margin-left: 10px;
             margin-right: 10px;
+            display: block;
+            margin-top: 0;
             .title{
                 font-size: 20px;
                 display: flex;
@@ -36,6 +37,7 @@
                 .add{
                     width: 20px;
                     height: 20px;
+                    margin-top: 1px;
                     border: 1px solid $color_main;
                     font-size: 13px;
                     display: flex;
@@ -59,15 +61,33 @@
                 font-size: 12px;
             }
             .discribe{
-                height: 127px;
+                height: 120px;
                 overflow-y: scroll;
                 margin-top: 10px;
                 font-size: 12px;
             }
             .menu{
-                margin-top: 10px;
+                margin-top: 20px;
                 display: flex;
                 justify-content: flex-end;
+                .more{
+                    width: 20px;
+                    height: 20px;
+                    font-size: 9px;
+                    margin-left: 10px;
+                    background-color: $color_main;
+                    border: 1px solid $color_main;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .comment{
+                    border: 1px solid $color_main;
+                    font-size: 11px;
+                    padding: 0 10px 0 10px;
+                    line-height: 20px;
+                }
             }
         }
     }
